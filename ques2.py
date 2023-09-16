@@ -27,7 +27,7 @@
 #     i+=1
 # i=0
 # s=[]
-# while(i<n): /*#042331 */
+# while(i<n): 
 #     x=nos[i]**2
 #     s.append(x)
 #     #print(nos[i],s[i])
@@ -42,3 +42,21 @@
 #     sq=n**2
 #     sum=sum+sq
 # print(sum)
+
+#5
+list1 = []
+list2 = []
+n1 = int(input("Enter the number of elements in the first list: "))
+i = 0
+while i < n1:
+    int1 = int(input("Enter an integer for the first list: "))
+    list1.append(int1)
+    i += 1
+n2 = int(input("Enter the number of elements in the second list: "))
+i = 0
+while i < n2:
+    int2 = int(input("Enter an integer for the second list: "))
+    list2.append(int2)
+    i += 1
+common=set(list1) & set(list2)
+print("Common elements:", common)

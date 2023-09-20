@@ -49,16 +49,15 @@
 
 
 # #4
-st=input("Enter a string: ")    
-rev=""
+# st=input("Enter a string: ")    
+# rev=""
 # i=len(st)-1  
 # while (i>=0):
 #     rev=rev+st[i]
 #     i=i-1  
 #     s=rev    
 # result=s
-s=st[5]
-print("Reversed string:",s) #result)
+# print("Reversed string:", result)
 
 #5
 # i=0

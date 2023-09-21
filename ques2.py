@@ -134,34 +134,119 @@
 #         print(k,end=' ')
 #         k=k+2
 #     print()
-n=5
-for i in range(1,n):
-    for j in range(1,i*2,2):
-        print(j,end=" ")
-    print()
-n=5
-k=1
-for i in range(1,n):
+# n=5
+# for i in range(1,n):
+#     for j in range(1,i*2,2):
+#         print(j,end=" ")
+#     print()
+# n=5
+# k=1
+# for i in range(1,n):
+#     for j in range(1,i+1):
+#         print(k,end=' ')
+#         k=k+2
+#     print()
+# n=5
+# for i in range(1,n):
+#     for j in range(2,i*4,2):
+#         print(j,end=" ")
+#     print()
+# n=4
+# k=1
+# for i in range(1,n):
+#     for j in range(1,i*2):
+#         print(k,end=' ')
+#         k=k+2
+#     print()
+# n=4
+# k=1
+# for i in range(1,n):
+#     for j in range(1,i*2):
+#         print(k,end=' ')
+#         k=k+1
+#     print()
+
+# n=68
+# for i in range(65,n):
+#     for j in range(65,i+1):
+#         print(chr(j),end=" ")
+#     print()
+# n=68
+# for i in range(65,n):
+#     for j in range(65,i+1):
+#         print(chr(i),end=" ")
+#     print()
+# n=68
+# k=65
+# for i in range(65,n):
+#     for j in range(65,i+1):
+#         print(chr(k),end=" ")
+#         k+=1
+#     print()
+# n = 5
+# for i in range(1, n):
+#     for j in range(1, i + 1):
+#         if j % 2 == 0:
+#             print("2", end=" ")
+#         else:
+#             print("1", end=" ")
+#     print() 
+# n = 5
+# for i in range(1, n):   
+#     for j in range(n, i, -1):
+#         print(" ", end=" ")
+#     for j in range(1, i + 1):
+#         print(j, end=" ")
+#     for j in range(i - 1, 0, -1):
+#         print(j, end=" ")
+#     print() 
+# n=5
+# for i in range(1,n):
+#     for s in range(0,n):
+#         print(end="  ")
+#     n=n-1
+#     for j in range(1,i+1):
+#         print(j,end=" ")
+#     for k in range(i-1,0,-1):
+#         print(k,end=" ")
+#     print()     
+# n = 5
+# for i in range(1, n):
+#     for s in range(0,n):
+#         print(end="  ")
+#     n=n-1
+#     for j in range(1, i + 1):
+#         if j % 2 == 0:
+#             print("A", end=" ")
+#         else:
+#             print("*", end=" ")
+#     for k in range(i-1,0,-1):
+#         if k % 2 == 0:
+#             print("A", end=" ")
+#         else:
+#             print("*", end=" ")
+#     print() 
+# n=4
+# for i in range(0,n):
+#     for s in range(0,n):
+#         print("*",end=" ")
+#     n=n-1
+#     print()
+# for i in range(1,4):
+#     for j in range(0,i+1):
+#         print("*",end=" ")
+#     print()
+n=4
+for i in range(0,n):
+    for j in range(0,1):
+        print("*",end=" ")
     for j in range(1,i+1):
-        print(k,end=' ')
-        k=k+2
-    print()
-n=5
-for i in range(1,n):
-    for j in range(2,i*4,2):
         print(j,end=" ")
+    for k in range(i-1,0,-1):
+        print(k,end=" ")
     print()
-n=4
-k=1
-for i in range(1,n):
-    for j in range(1,i*2):
-        print(k,end=' ')
-        k=k+2
-    print()
-n=4
-k=1
-for i in range(1,n):
-    for j in range(1,i*2):
-        print(k,end=' ')
-        k=k+1
+for i in range(1,4):
+    for s in range(1,2):
+        print("*",end=" ")
+    n=n-1
     print()

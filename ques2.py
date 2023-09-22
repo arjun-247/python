@@ -244,9 +244,19 @@ for i in range(0,n):
         print(j,end=" ")
     for k in range(i-1,0,-1):
         print(k,end=" ")
+    for k in range(1,0,-1):
+        print("*",end=" ")
     print()
-for i in range(1,4):
+for i in range(1,3):
     for s in range(1,2):
         print("*",end=" ")
     n=n-1
+    for s in range(1,n):
+        print(s,end=" ")
+    n=n-1
+    for s in range(1,0,-1):
+        print(s,end=" ")
+    for k in range(i,i-1,-1):
+        print("*",end=" ")
     print()
+    

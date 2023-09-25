@@ -62,6 +62,37 @@
 #     if i%2==0:
 #         print(i)
 
-n=[5,2,3,4,1,3,4,2,3]
-for i in range(0,len(n)):
-    print("*"*n[i])
+# n=[5,2,3,4,1,3,4,2,3]
+# for i in range(0,len(n)):
+#     print("*"*n[i])
+
+# st=str(input("enter string"))
+# v=set("aeiou")
+# vcount=0
+# for i in st:
+#     if i in v:
+#         vcount=vcount+1
+# print("no of vowels",vcount)
+
+
+# st=input("enter string")
+# rev=st[::-1]
+# if st==rev:
+#     print("palindrome")
+# else:
+#     print("not palindrome")
+
+
+
+sentence=input("enter sentence ")
+words=sentence.split()
+result=""
+for w in words:
+    if w==w[::-1]:
+        for i in range(len(w)):
+            a=len(w)*"@"
+        result=result+a
+    else:
+        result=result+w
+    result=result+" "
+print(result)

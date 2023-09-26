@@ -84,15 +84,52 @@
 
 
 
-sentence=input("enter sentence ")
-words=sentence.split()
-result=""
-for w in words:
-    if w==w[::-1]:
-        for i in range(len(w)):
-            a=len(w)*"@"
-        result=result+a
-    else:
-        result=result+w
-    result=result+" "
-print(result)
+# sentence=input("enter sentence ")
+# words=sentence.split()
+# result=""
+# for w in words:
+#     if w==w[::-1]:
+#         for i in range(len(w)):
+#             a=len(w)*"@"
+#         result=result+a
+#     else:
+#         result=result+w
+#     result=result+" "
+# print(result)
+
+# n=[5,1,5,1,1,1]
+# for i in range(0,len(n)):
+#     print("*"*n[i])
+
+# n=68
+# for i in range(65,n):
+#     for j in range(i,64,-1):
+#         print(chr(j),end=" ")
+#     print()
+
+# n=5
+# for i in range(1,n+1):
+#     for j in range(n,0,-1):
+#         if j==i or j==n or i==1:
+#             print("*",end=" ")
+#         else:
+#             print(" ",end=" ")       
+#     print()
+
+# km=10
+# year=int(input("enter year"))
+# if year%4==0:
+#     t=km*366
+#     print("total km walked=",t)
+# else:
+#     t=km*365
+#     print("total km walked=",t)
+
+m=int(input("enter marks for maths"))
+p=int(input("enter marks for physics"))
+c=int(input("enter marks for chemistry"))
+t=m+p
+if m>=55 and p>=50 and c>=50 and t>=140:
+    print("passed")
+else:
+    print("failed")

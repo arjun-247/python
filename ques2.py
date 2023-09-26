@@ -166,11 +166,11 @@
 #         k=k+1
 #     print()
 
-# n=68
-# for i in range(65,n):
-#     for j in range(65,i+1):
-#         print(chr(j),end=" ")
-#     print()
+n=68
+for i in range(65,n):
+    for j in range(65,i+1):
+        print(chr(j),end=" ")
+    print()
 # n=68
 # for i in range(65,n):
 #     for j in range(65,i+1):
@@ -236,27 +236,29 @@
 #     for j in range(0,i+1):
 #         print("*",end=" ")
 #     print()
-n=4
-for i in range(0,n):
-    for j in range(0,1):
-        print("*",end=" ")
-    for j in range(1,i+1):
-        print(j,end=" ")
-    for k in range(i-1,0,-1):
-        print(k,end=" ")
-    for k in range(1,0,-1):
-        print("*",end=" ")
-    print()
-for i in range(1,3):
-    for s in range(1,2):
-        print("*",end=" ")
-    n=n-1
-    for s in range(1,n):
-        print(s,end=" ")
-    n=n-1
-    for s in range(1,0,-1):
-        print(s,end=" ")
-    for k in range(i,i-1,-1):
-        print("*",end=" ")
-    print()
+
+
+# n=4
+# for i in range(0,n):
+#     for j in range(0,1):
+#         print("*",end=" ")
+#     for j in range(1,i+1):
+#         print(j,end=" ")
+#     for k in range(i-1,0,-1):
+#         print(k,end=" ")
+#     for k in range(1,0,-1):
+#         print("*",end=" ")
+#     print()
+# for i in range(1,3):
+#     for s in range(1,2):
+#         print("*",end=" ")
+#     n=n-1
+#     for s in range(1,n):
+#         print(s,end=" ")
+#     n=n-1
+#     for s in range(1,0,-1):
+#         print(s,end=" ")
+#     for k in range(i,i-1,-1):
+#         print("*",end=" ")
+#     print()
     

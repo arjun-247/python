@@ -57,7 +57,16 @@
 # while i < n2:
 #     int2 = int(input("Enter an integer for the second list: "))
 #     list2.append(int2)
-#     i += 1st=input("Enter a string: ")    
+#     i += 1
+# common=[]
+# for i1 in range(len(list1)):
+#     for i2 in range(len(list2)):
+#         if list1[i1]==list2[i2]:
+#             if list1[i1] not in common:
+#                 common.append(list1[i1])
+# print(common)
+
+# st=input("Enter a string: ")    
 # rev=""
 # i=len(st)-1  
 # while (i>=0):
@@ -67,6 +76,7 @@
 # result=s
 # print("Reversed string:", result)
 
+# n=int(input("enter no of list items"))
 # while i<n:
 #     no=int(input("entr numbers"))
 #     list1.append(no)
@@ -166,11 +176,11 @@
 #         k=k+1
 #     print()
 
-n=68
-for i in range(65,n):
-    for j in range(65,i+1):
-        print(chr(j),end=" ")
-    print()
+# n=68
+# for i in range(65,n):
+#     for j in range(65,i+1):
+#         print(chr(j),end=" ")
+#     print()
 # n=68
 # for i in range(65,n):
 #     for j in range(65,i+1):

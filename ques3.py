@@ -8,7 +8,7 @@
 #     list1.append(int1)
 #     i+=1
 # # print(list1)
-# n2=int(input("enter no of elements in first list"))
+# n2=int(input("enter no of elements in second list"))
 # i=0
 # while i<n2:
 #     int2=int(input("enter number "))
@@ -125,11 +125,14 @@
 #     t=km*365
 #     print("total km walked=",t)
 
-m=int(input("enter marks for maths"))
-p=int(input("enter marks for physics"))
-c=int(input("enter marks for chemistry"))
-t=m+p
-if m>=55 and p>=50 and c>=50 and t>=140:
-    print("passed")
-else:
-    print("failed")
+# m=int(input("enter marks for maths"))
+# p=int(input("enter marks for physics"))
+# c=int(input("enter marks for chemistry"))
+# t=m+p
+# if m>=55 and p>=50 and c>=50 and t>=140:
+#     print("passed")
+# else:
+#     print("failed")
+
+
+    

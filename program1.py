@@ -230,8 +230,7 @@
 #     if num % i == 0:
 #         f=1
 #         break
-#     i=i+1
-    
+#     i=i+1   
 # if f==0:
 #     print("PRIME number")
 # else:

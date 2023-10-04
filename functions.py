@@ -180,14 +180,63 @@
 # print("hexa decimal :",hexadecimal())
 
 
-n=int(input("enter limit"))
-asc=[]
-dec=[]
-for i in range(n):
-    a=int(input("enter no :"))
-    asc.append(a)
-    dec.append(a)
-asc.sort()
-dec.sort(reverse=True)
-print("ascending order :",asc)
-print("desc order :",dec)
+# n=int(input("enter limit"))
+# asc=[]
+# dec=[]
+# for i in range(n):
+#     a=int(input("enter no :"))
+#     asc.append(a)
+#     dec.append(a)
+# asc.sort()
+# dec.sort(reverse=True)
+# print("ascending order :",asc)
+# print("desc order :",dec)
+
+
+
+# def fib(): 
+#     f=[0,1]
+#     for i in range(100) :
+#         b=f[i]+f[i+1]
+#         f.append(b)
+#     r=[]
+#     for i in range(len(f)):
+#         if f[i]<n:
+#             r.append(f[i])
+#     return r
+# n=int(input("enter no"))
+# print(fib())
+
+
+
+list=[3,8,12,7,6,10,21,15]
+list2=list.copy()
+for i in range(len(list)):
+    for j in range(len(list2)):
+        if list[i]+list2[j]==18:
+            print(list[i],list2[j])
+
+
+list = ["apple", "banana", "cherry", "date"]
+list2=list.copy()
+for i in range(len(list)):
+    for j in range(len(list2)):
+        for char in list[i]:
+            if char in list2[j]:
+                print(list[i],list2[j])
+                break
+
+list=[2,3,4,5,6]
+print("numbers whose sum is odd")
+for i in range(len(list)):
+    for j in range(i,len(list)):
+        s=list[i]+list[j]
+        if s%2!=0:
+            print(list[i],list[j])
+print("numbers whose product is even")
+for i in range(len(list)):
+    for j in range(i+1,len(list)):
+        p=list[i]*list[j]
+        if p%2==0:
+            print(list[i],list[j])   
+        

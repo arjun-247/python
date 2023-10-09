@@ -265,12 +265,18 @@
 # sent=input("enter a sentence")
 # print(capital())
 
-nums=[2,7,11,15]
-target=9
-for i in range(len(nums)):
-    for j in range(len(nums)):
-        if(nums[i]+nums[j]==target):
-            print(i,j)
 
-            
-            
+
+# nums=[2,7,11,15]
+# target=9
+# result=[]
+# for i in range(len(nums)):
+#     for j in range(1,len(nums)):
+#         if(nums[i]+nums[j]==target):
+#             result.append(i) 
+#             result.append(j) 
+# print(result) 
+
+x=int(input("enter no:"))
+y=x**0.5
+print(int(y))          

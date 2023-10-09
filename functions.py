@@ -194,77 +194,83 @@
 
 
 
-def fib(): 
-    f=[0,1]
-    for i in range(100) :
-        b=f[i]+f[i+1]
-        f.append(b)
-    r=[]
-    for i in range(len(f)):
-        if f[i]<n:
-            r.append(f[i])
-    return r
-n=int(input("enter no"))
-print(fib())
+# def fib(): 
+#     f=[0,1]
+#     for i in range(100) :
+#         b=f[i]+f[i+1]
+#         f.append(b)
+#     r=[]
+#     for i in range(len(f)):
+#         if f[i]<n:
+#             r.append(f[i])
+#     return r
+# n=int(input("enter no"))
+# print(fib())
 
 
 
-list=[3,8,12,7,6,10,21,15]
-for i in range(len(list)):
-    for j in range(len(list)):
-        if list[i]+list[j]==18:
-            print(list[i],list[j])
+# list=[3,8,12,7,6,10,21,15]
+# for i in range(len(list)):
+#     for j in range(len(list)):
+#         if list[i]+list[j]==18:
+#             print(list[i],list[j])
 
 
-list = ["apple", "banana", "cherry", "date"]
-for i in range(len(list)):
-    for j in range(len(list)):
-        for c in list[i]:
-            if c in list[j]:
-                print(list[i],list[j])
-                break
+# list = ["apple", "banana", "cherry", "date"]
+# for i in range(len(list)):
+#     for j in range(len(list)):
+#         for c in list[i]:
+#             if c in list[j]:
+#                 print(list[i],list[j])
+#                 break
 
-list=[2,3,4,5,6]
-print("numbers whose sum is odd")
-for i in range(len(list)):
-    for j in range(i,len(list)):
-        s=list[i]+list[j]
-        if s%2!=0:
-            print(list[i],list[j])
-print("numbers whose product is even")
-for i in range(len(list)):
-    for j in range(i+1,len(list)):
-        p=list[i]*list[j]
-        if p%2==0:
-            print(list[i],list[j])   
+# list=[2,3,4,5,6]
+# print("numbers whose sum is odd")
+# for i in range(len(list)):
+#     for j in range(i,len(list)):
+#         s=list[i]+list[j]
+#         if s%2!=0:
+#             print(list[i],list[j])
+# print("numbers whose product is even")
+# for i in range(len(list)):
+#     for j in range(i+1,len(list)):
+#         p=list[i]*list[j]
+#         if p%2==0:
+#             print(list[i],list[j])   
 
 
-str = input("Enter sentnce: ")
-words=str.split()
-print("no of words in the sentence:",len(words))
+# str = input("Enter sentnce: ")
+# words=str.split()
+# print("no of words in the sentence:",len(words))
 
-def longest_word():
-    sent=input("enter a sentence")
-    words=sent.split()
-    result=""
-    length=0
-    for i in words:
-        if(len(i)>length):
-            result=i
-            length=len(i)
-    return result
-print(longest_word())
+# def longest_word():
+#     sent=input("enter a sentence")
+#     words=sent.split()
+#     result=""
+#     length=0
+#     for i in words:
+#         if(len(i)>length):
+#             result=i
+#             length=len(i)
+#     return result
+# print(longest_word())
 
-def capital():
-    words=sent.split()
-    cap=[]
-    for i in words:
-        if i[0].isupper():
-            cap.append(i)
-    return cap
-sent=input("enter a sentence")
-print(capital())
+# def capital():
+#     words=sent.split()
+#     cap=[]
+#     for i in words:
+#         if i[0].isupper():
+#             cap.append(i)
+#     return cap
+# sent=input("enter a sentence")
+# print(capital())
 
+nums=[2,7,11,15]
+target=9
+for i in range(len(nums)):
+    for j in range(len(nums)):
+        if(nums[i]+nums[j]==target):
+            print(i,j)
 
             
             

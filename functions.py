@@ -280,3 +280,38 @@
 x=int(input("enter no:"))
 y=x**0.5
 print(int(y))          
+
+def wrds():
+    snt=input("enter sentence")
+    word_count=0
+    words=0
+    for i in range(len(snt)):
+        if snt[i].isspace():
+            words=0
+        elif not words:
+            words=1
+            word_count+=1
+    return word_count
+print(wrds())
+
+def long():
+    sent=input("enter sentence")
+    words=sent.split()
+    longest_word=""
+    length=0
+    for i in range(len(words)):
+        if len(words[i])>length:
+            longest_word=words[i]
+            length=len(words[i])
+    return longest_word
+print(long())
+
+def capital():
+    sent=input("enter sentence ")
+    words=sent.split()
+    for i in words:
+        if i[0].isupper():
+            print(i)
+capital()
+
+ 

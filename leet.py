@@ -25,10 +25,23 @@
 # nums1.sort()
 # print(nums1)
 
-nums=[1,1,2]
-for i in range(len(nums)):
-    for j in range(1,len(nums)):
-        if nums[i]==nums[j]:
-            nums.remove(nums[i])
-            nums.append("-")
-print(nums)
+# nums=[3,2,2,3]
+# i=int(input("enter num"))
+# while i in nums:
+#    nums.remove(i)  
+# print(nums)
+
+num=int(input("enter number"))
+su=0
+while num>0:
+    n=num%10
+    su=su+n
+    num=num//10
+if su>9:
+    num=su
+    su=0
+    while num>0:
+        n=num%10
+        su=su+n
+        num=num//10
+print(su)

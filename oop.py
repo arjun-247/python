@@ -133,6 +133,7 @@
 #             if accno==i.accountnumber:
 #                 i.withdrawal()
 #                 i.showbal()
+#                 print(l)
 #     elif choice==4:
 #         break
 #     else:
@@ -146,4 +147,44 @@ class Employee:
         self.emp_id=id
         self.emp_salary=salary
         self.emp_dept=dep
-    
+    def print_employee_details(self):
+        print(f"Name:{self.emp_name} \nID:{self.emp_id} \nSalary:{self.emp_salary} \nDepartment:{self.emp_dept}")
+    def calculate_salary(self):
+        time=int(input("enter hours worked:"))
+        if time>50:
+            ot=time-50
+            self.emp_salary+=((ot)*(self.emp_salary/50))
+        else:
+            self.emp_salary=self.emp_salary
+list=[]
+def create():
+    nme=input("enter name:")
+    id=input("enter employee id:")
+    sal=int(input("enter slary:"))
+    dep=input("enter department:")
+    emp=Employee(id,nme,sal,dep)
+    list.append(emp)
+while True:
+    print("1.create\n2.print employee details\n3.calculate salary")
+    n=int(input("enter choice:"))
+    if n==1:
+        create()
+    elif n==2:
+        eid=input("enter employee id")
+        for i in list:
+            if eid == i.emp_id:
+                i.print_employee_details()
+            else:
+                print("enter correct id")
+    elif n==3:
+        eid=input("enter employee id")
+        for i in list:
+            if eid == i.emp_id:
+                i.calculate_salary()
+                i.print_employee_details()
+    else:
+        print("invalid")
+        break
+            
+
+

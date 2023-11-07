@@ -1,0 +1,10 @@
+import tkinter
+w=tkinter.Tk()
+w.geometry('250x250')
+l1=tkinter.Label(text="Name")
+l2=tkinter.Button(text="ok")
+e1=tkinter.Entry()
+l1.grid(row=0,column=0)
+l2.grid(row=1,column=1)
+e1.grid(row=0,column=1)
+w.mainloop()

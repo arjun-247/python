@@ -22,18 +22,18 @@
 # print(add(p,k))
 
 
-def capital(name):
-    list=[]
-    result=""
-    words=name.split()
-    for i in words:
-        c=i.capitalize()
-        list.append(c)
-    result=' '.join(list)
-    return result
-name=input("enter name ")
-s=capital(name)
-print(s)
+# def capital(name):
+#     list=[]
+#     result=""
+#     words=name.split()
+#     for i in words:
+#         c=i.capitalize()
+#         list.append(c)
+#     result=' '.join(list)
+#     return result
+# name=input("enter name ")
+# s=capital(name)
+# print(s)
 
 
 # def string():

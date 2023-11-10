@@ -70,23 +70,23 @@
 # w.mainloop()
 
 
-from tkinter import*
-w=Tk()
-w.config(background='white')
-w.geometry('250x250')
-l1=Label(w,text='num')
-l2=Label(w,text='factorial')
-e1=Entry(w,width=20)
-e2=Entry(w,width=20)
-l1.grid(row=0,column=0)
-l2.grid(row=1,column=0)
-e1.grid(row=0,column=1,padx=10)
-e2.grid(row=1,column=1,padx=10)
-def fact():
-    f=1
-    for i in range(1,(int(e1.get()))+1):
-        f=f*i
-    e2.delete(0,END)
-    e2.insert(END,f)
-b1=Button(w,text='factorial',command=fact).grid(row=2,column=1)
-w.mainloop()               
+# from tkinter import*
+# w=Tk()
+# w.config(background='white')
+# w.geometry('250x250')
+# l1=Label(w,text='num')
+# l2=Label(w,text='factorial')
+# e1=Entry(w,width=20)
+# e2=Entry(w,width=20)
+# l1.grid(row=0,column=0)
+# l2.grid(row=1,column=0)
+# e1.grid(row=0,column=1,padx=10)
+# e2.grid(row=1,column=1,padx=10)
+# def fact():
+#     f=1
+#     for i in range(1,(int(e1.get()))+1):
+#         f=f*i
+#     e2.delete(0,END)
+#     e2.insert(END,f)
+# b1=Button(w,text='factorial',command=fact).grid(row=2,column=1)
+# w.mainloop()               

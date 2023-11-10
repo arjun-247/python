@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function price(){
+            var x;
+            x=document.getElementById("fruits").value;
+            switch(x)
+            {
+                case 'Apple':
+                    price=20;
+                    break;
+                case 'Banana':
+                    price=25;
+                    break;
+                case 'Grape':
+                    price=30;
+                    break;
+                default:
+                    print("invalid")
+                    break;
+            }
+            document.getElementById("res").value=price
+        }
+    </script>
+    <h2>fruits</h2>
+    Select your fruit:
+    <select name="" id="fruits">
+
+        <option value="Apple">Apple</option>
+        <option value="Banana">Banana</option>
+        <option value="Grape">Grape</option>
+    </select>
+    <span id="s"></span>
+    <br>
+    <button onclick="price()">Price</button>
+    <input type="text " id="res">
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="text-align: center; font-size: 20px;">
+    <h2>Area</h2>
+    height <input  id="h">
+    <br><br>
+    width <input  id="b">
+    <br><br>
+    <button onclick="area()">Area</button>
+    <p id="res"></p>
+    <script>
+        function area(){
+            var h,w,c;
+            h=document.getElementById("h").value;
+            w=document.getElementById("b").value;
+            a=h*w;
+            document.getElementById("res").innerHTML="Area is "+a;
+        }
+
+    </script>
+    
+</body>
+</html>
